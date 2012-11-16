@@ -1,0 +1,38 @@
+﻿<Page
+    x:Class="Panels.StackPanel"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Panels"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel Background="Turquoise">
+        <Grid>
+                <StackPanel x:Name="HorizontalPanel" Background="Bisque">
+                    <!--The empty space is truncated when the orientation of stackpanel is changed to horizontal.-->
+                    <TextBlock Text="1st TextBlock in nested panel.      "
+                               FontFamily="Algerian" FontSize="60"
+                               Foreground="Brown"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Bottom"/>
+                    <!--VerticalAligment bottom has no effect in this case.-->
+                    <TextBlock Text="2nd TextBlock in nested panel. " 
+                               FontFamily="Algerian" FontSize="60"
+                               Foreground="BlueViolet"
+                               HorizontalAlignment="Center"
+                               />
+                <TextBlock Text="Tap to change stack order." 
+                               FontFamily="Algerian" FontSize="60"
+                               Foreground="Crimson"
+                               Tapped="TextBlock_Tapped_1"
+                               HorizontalAlignment="Center"
+                               />
+                </StackPanel>
+        </Grid>
+        <TextBlock Text="TextBlock next to grid." 
+                   FontFamily="Algerian" FontSize="60" 
+                   Foreground="Black"
+                   HorizontalAlignment="Center"/>
+    </StackPanel>
+</Page>

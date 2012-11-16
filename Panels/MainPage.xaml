@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="Panels.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <Border BorderBrush="Aquamarine" Background="Goldenrod" BorderThickness="10 10 10 10" CornerRadius="15"
+                VerticalAlignment="Center" HorizontalAlignment="Left">
+            <!--Notice if not specify vertical alignment and horizontal aligment. The border will occupy the whole page.
+            Also notice it is superior to the textblock the horizontal aligment is left but not center!-->
+        <TextBlock Text="Border Demo" FontFamily="Matura MT Script Capitals"
+                   Foreground="Indigo" 
+                   FontSize="60" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10 0 10 0"/>
+        </Border>
+        <TextBlock x:Name="TxtBlck2" Text="Border Demo" FontFamily="Matura MT Script Capitals"
+                   Foreground="GhostWhite" 
+                   FontSize="60" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10 0 10 0"
+                   Tapped="TxtBlck2_Tapped_1"/>
+    </Grid>
+</Page>
